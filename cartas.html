@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cartas 💜</title>
+  <meta name="theme-color" content="#0a0612">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+
+  <header class="topbar">
+    <a href="index.html" class="logo">Isabelli<span>💜</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="overlay" id="overlay"></div>
+  <nav class="drawer" id="drawer" aria-label="Menu principal">
+    <p class="drawer-title">Menu</p>
+    <ul>
+      <li><a href="index.html#inicio">Início</a></li>
+      <li><a href="index.html#historia">Nossa história</a></li>
+      <li><a href="index.html#tempo">Tempo juntos</a></li>
+      <li><a href="index.html#galeria">Galeria</a></li>
+      <li><a href="index.html#motivos">Motivos</a></li>
+      <li><a href="cartas.html">Cartas</a></li>
+    </ul>
+    <p class="drawer-foot">Feito com carinho 💜</p>
+  </nav>
+
+  <main>
+    <section class="section page-top">
+      <h2>Cartas</h2>
+      <p class="hint">Toque em uma carta para abrir</p>
+
+      <!-- Para adicionar uma carta nova, copie um bloco <details> abaixo e troque título, data e texto. -->
+      <details class="letter-item" open>
+        <summary><span class="l-title">Carta da volta</span><span class="l-date">08/11/2026</span></summary>
+        <div class="letter">
+          <p>Esperei e pedi pela sua volta durante anos, e ter você ao meu lado novamente foi a melhor coisa que me aconteceu.</p>
+          <p>Tudo, tudo em você me encanta: a sua alegria, o seu sorriso, o seu olhar. Você é mais do que eu sempre pedi a Deus.</p>
+          <p>Quero viver tudo o que sonhamos da primeira vez e não conseguimos viver, formar uma família ao seu lado e passar o resto da minha vida com você.</p>
+          <p class="sign">Com amor, <em>Guilherme</em> 💜</p>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <footer class="footer">Feito com 💜 só pra você</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

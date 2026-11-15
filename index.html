@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Para você 💜</title>
+  <meta name="theme-color" content="#0a0612">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+
+  <header class="topbar">
+    <a href="#inicio" class="logo">Isabelli<span>💜</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="overlay" id="overlay"></div>
+  <nav class="drawer" id="drawer" aria-label="Menu principal">
+    <p class="drawer-title">Menu</p>
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#historia">Nossa história</a></li>
+      <li><a href="#tempo">Tempo juntos</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#motivos">Motivos</a></li>
+      <li><a href="cartas.html">Cartas</a></li>
+    </ul>
+    <p class="drawer-foot">Feito com carinho 💜</p>
+  </nav>
+
+  <main>
+    <section id="inicio" class="hero">
+      <p class="eyebrow">Para a mulher mais especial</p>
+      <h1>Oi, <em>meu amor</em></h1>
+      <p class="sub">Fiz este cantinho só pra você.</p>
+      <a href="#historia" class="btn">Entrar</a>
+    </section>
+
+    <section id="historia" class="section reveal">
+      <h2>Nossa história</h2>
+      <div class="timeline">
+        <div class="item"><span class="dot"></span><h3>O começo</h3><p>Nos conhecemos pelo Facebook.</p></div>
+        <div class="item"><span class="dot"></span><h3>Primeiro encontro</h3><p>Nos encontramos pela primeira vez no cinema, aonde a tia dela a levou sem que os pais soubessem.</p></div>
+        <div class="item"><span class="dot"></span><h3>08/07/2021</h3><p>Começamos a namorar pela primeira vez.</p></div>
+        <div class="item"><span class="dot"></span><h3>08/11/2026</h3><p>Voltamos, e agora é para valer. Vem muita coisa boa por aí.</p></div>
+      </div>
+    </section>
+
+    <section id="tempo" class="section reveal">
+      <h2>Tempo juntos</h2>
+      <p class="counter-label">Desde que voltamos</p>
+      <div class="counter" data-start="2026-11-08T00:00:00">
+        <div><b data-u="d">0</b><small>dias</small></div>
+        <div><b data-u="h">0</b><small>horas</small></div>
+        <div><b data-u="m">0</b><small>min</small></div>
+        <div><b data-u="s">0</b><small>seg</small></div>
+      </div>
+      <p class="counter-label">Desde o nosso primeiro começo</p>
+      <div class="counter" data-start="2021-07-08T00:00:00">
+        <div><b data-u="d">0</b><small>dias</small></div>
+        <div><b data-u="h">0</b><small>horas</small></div>
+        <div><b data-u="m">0</b><small>min</small></div>
+        <div><b data-u="s">0</b><small>seg</small></div>
+      </div>
+    </section>
+
+    <section id="galeria" class="section reveal">
+      <h2>Galeria</h2>
+      <div class="gallery">
+        <div class="photo"><img src="fotos/1.jpg" alt="Nós dois com filtro do Bob Esponja" loading="lazy"></div>
+        <div class="photo"><img src="fotos/2.jpg" alt="Nós dois no sofá" loading="lazy"></div>
+        <div class="photo"><img src="fotos/3.jpg" alt="Nós dois, com sinal de paz" loading="lazy"></div>
+        <div class="photo"><img src="fotos/4.jpg" alt="Nós dois com filtro de borboletas" loading="lazy"></div>
+        <div class="photo"><img src="fotos/6.jpg" alt="Nós dois à noite" loading="lazy"></div>
+        <div class="photo"><img src="fotos/7.jpg" alt="Nós dois, abraçados" loading="lazy"></div>
+        <div class="photo wide"><img src="fotos/5.jpg" alt="Nós dois num restaurante" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section id="motivos" class="section reveal">
+      <h2>Motivos pelos quais te amo</h2>
+      <p class="hint">Toque em cada cartão 💜</p>
+      <div class="cards">
+        <button class="flip" type="button"><span class="face front">Motivo 1</span><span class="face back">A sua alegria.</span></button>
+        <button class="flip" type="button"><span class="face front">Motivo 2</span><span class="face back">O seu sorriso.</span></button>
+        <button class="flip" type="button"><span class="face front">Motivo 3</span><span class="face back">O seu olhar.</span></button>
+        <button class="flip" type="button"><span class="face front">Motivo 4</span><span class="face back">Você é mais do que eu sempre pedi a Deus.</span></button>
+        <button class="flip" type="button"><span class="face front">Motivo 5</span><span class="face back">Com você eu quero formar a minha família.</span></button>
+        <button class="flip" type="button"><span class="face front">Motivo 6</span><span class="face back">Você voltou, e eu agradeço por isso todos os dias.</span></button>
+      </div>
+      <p class="more"><a href="cartas.html" class="btn">Ler as minhas cartas</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">Feito com 💜 só pra você</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
