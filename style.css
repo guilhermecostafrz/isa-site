@@ -184,6 +184,18 @@ main, .footer { position: relative; z-index: 1; }
 .more { text-align: center; margin-top: 50px; }
 .page-top { padding-top: 140px; min-height: 80vh; }
 
+/* Sobre ela */
+.about { max-width: 720px; margin: 0 auto; font-size: 1.05rem; }
+.about p + p { margin-top: 1.4em; }
+.about .lead {
+  font-family: 'Playfair Display', serif; font-size: 1.3rem; line-height: 1.8;
+  color: var(--purple-light); padding-left: 22px; border-left: 3px solid var(--purple);
+}
+.about .closing {
+  text-align: center; font-family: 'Playfair Display', serif; font-style: italic;
+  font-size: 1.2rem; color: var(--purple-light); margin-top: 2em;
+}
+
 /* Flip cards */
 .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 18px; }
 .flip {
